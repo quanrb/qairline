@@ -13,6 +13,7 @@
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
   <script type="text/javascript" src="{% static 'js/layout.js' %}"></script>
+  <style></style>
   {% block head %}
   {% endblock %}
 </head>
@@ -20,7 +21,7 @@
   {% block parentBody %}
   {% endblock %}
   <div class="container-fluid">
-    <nav class="navbar navbar-expand-lg navbar-light">
+    <nav class="navbar navbar-expand-lg">
       <a class="navbar-brand" href="{% url 'index' %}">
           <img src="{% static 'img/icon_logo.png' %}" height="34" alt="">
       </a>
@@ -40,7 +41,7 @@
         <ul class="navbar-nav">
           {% if not user.is_authenticated %}
             <li class="nav-item">
-              <button class="btn btn-outline-danger" style="border-radius: 25rem;" onclick="window.location.href = '/login';">
+              <button class="button" style="border-radius: 25rem;" onclick="window.location.href = '/login';">
                 <svg width="1.1em" height="1.1em" viewBox="0 1.5 16 16" class="bi bi-person-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
                 </svg>
@@ -86,25 +87,9 @@
 
     <footer>
       <div class="container">
-        <div>
+        <div class="footer-content">
           <div class="logo-container">
             <img src="{% static 'img/icon_logo.png' %}">
-          </div>
-          <div class="footer-content">
-            <div class="links-container">
-              <div>
-                <ul class="link-list">
-                  <li class="list-item"><a class="footer-links" href="{% url 'contact' %}">Contact Us</a></li>
-                  <li class="list-item"><a class="footer-links" href="{% url 'aboutus' %}">About Us</a></li>
-                  <li class="list-item"><a class="footer-links" href="{% url 'privacypolicy' %}">Privacy Policy</a></li>
-                  <li class="list-item"><a class="footer-links" href="{% url 'termsandconditions' %}">Terms &amp; Conditions</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="quote-container">
-              <div class="quote">“Surround yourself with people that are smarter than you, give them everything they need to grow, and your business will thrive.”</div>
-              <div class="quote-by">- Richard Branson</div>
-            </div>
           </div>
           <div class="social-links">
             <div class="social-icons">

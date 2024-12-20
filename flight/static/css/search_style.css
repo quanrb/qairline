@@ -16,6 +16,39 @@
 .white-2{
     font-size: medium;
 }
+
+.black{
+    color: black;
+    font-size: large;
+}
+.white-2{
+    font-size: medium;
+}
+.button {
+    color: #fff;
+    background-color: #007bff;
+    background-image: linear-gradient(135deg, #007bff, #3293fa);
+    border-color: #007bff;
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s;
+    transition: background-color .15s;
+    transition: border-color .15s;
+}
+
+.button:hover{
+    background-color: #3293fa;
+    background-image: linear-gradient(135deg, #3293fa, #007bff);
+    color: #141414;
+}
 .v-line{
     border-left: 1px dashed rgba(255, 255, 255, .9);
     height: 100%;
@@ -28,13 +61,14 @@
 
 .query-data-div{
     min-height: 11vh;
-    background-color: crimson;
-    background-image: linear-gradient(135deg, crimson, #b8017b);
+    background-color: #8EC5FC;
+    background-image: linear-gradient(135deg, #ffffff, #eaeaea);
+    padding: 1rem;
     display: flex;
 }
 .query-data-div2{
-    background-color: crimson;
-    background-image: linear-gradient(135deg, crimson, #b8017b);
+    background-color: #8EC5FC;
+    background-image: linear-gradient(135deg, #ffffff, #eaeaea);
     display: none;
 }
 .query-data-div2 > .container{
@@ -95,24 +129,25 @@
     padding-left: 12px;
     padding-right: 12px;
 }
-.trip-modify button{
-}
+
 .spl-btn{
     transition-duration: .2s;
     color: white;
     border-color: white;
+    background-color: #007bff;
+    background-image: linear-gradient(135deg, #007bff, #3293fa);
 }
 .spl-btn2{
     color: white;
     padding: 0;
 }
 .spl-btn2:hover{
-    color: white!important;
+    color: #85a8ed!important;
     background-color: transparent!important;
 }
 .spl-btn2:active{
     background-color: transparent!important;
-    color: white!important;
+    color: #85a8ed!important;
 }
 .spl-btn2:focus{
     box-shadow: none!important;
@@ -120,9 +155,14 @@
 /*.trip-modify button:hover, button:active, button:focus{
     background-color: rgba(220,53,69,.1);
 }*/
+.trip-modify button{
+    background-color: #007bff;
+    background-image: linear-gradient(135deg, #007bff, #3293fa);
+}
 .trip-modify button:hover, button:active{
-    background-color: rgb(255, 235, 245);
-    color: rgb(189, 4, 116);
+    background-color: #3293fa;
+    background-image: linear-gradient(135deg, #3293fa, #007bff);
+    color: #141414;
 }
 .trip-modify button:focus{
     box-shadow: 0 0 0 0.2rem rgba(255,255,255,.3);
@@ -384,13 +424,12 @@
 
 
 .selection-div{
-    position: fixed;
-    z-index: 99;
-    background-image: linear-gradient(135deg, rgba(220, 20, 60, .85), rgba(184,1,123,.85));
+    background-color: #8EC5FC;
+    background-image: linear-gradient(135deg, #ffffff, #eaeaea);
+    padding: 1rem;
+    border-top: 1px solid rgba(0,0,0,.3);
     height: 10%;
     width: 100%;
-    bottom: 0;
-    box-shadow:  0 0 15px rgba(0, 0, 0, .2);
     display: flex;
     color: white;
     justify-content: space-evenly;
