@@ -63,6 +63,7 @@
     min-height: 11vh;
     background-color: #8EC5FC;
     background-image: linear-gradient(135deg, #ffffff, #eaeaea);
+    padding: 1rem;
     display: flex;
 }
 .query-data-div2{
@@ -423,13 +424,12 @@
 
 
 .selection-div{
-    position: fixed;
-    z-index: 99;
-    background-image: linear-gradient(135deg, rgba(220, 20, 60, .85), rgba(184,1,123,.85));
+    background-color: #8EC5FC;
+    background-image: linear-gradient(135deg, #ffffff, #eaeaea);
+    padding: 1rem;
+    border-top: 1px solid rgba(0,0,0,.3);
     height: 10%;
     width: 100%;
-    bottom: 0;
-    box-shadow:  0 0 15px rgba(0, 0, 0, .2);
     display: flex;
     color: white;
     justify-content: space-evenly;
