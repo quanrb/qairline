@@ -29,8 +29,6 @@ body{
     font-size: .9em;
     margin-top: 3px;
     margin-bottom: 5px;
-    background-color: #007bff;
-    background-image: linear-gradient(135deg, #007bff, #3293fa);
 }
 .each-booking-div > div{
     display: flex;
@@ -107,11 +105,9 @@ body{
     display: flex;
     justify-content: space-evenly;
 }
-.popup .button{
+.popup .btn{
     padding-left: 30px;
     padding-right: 30px;
-    background-color: #007bff;
-    background-image: linear-gradient(135deg, #007bff, #3293fa);
 }
 
 .small-popup{
@@ -178,8 +174,6 @@ body{
 
 .pbtn, .rbtn{
     border: 0;
-    background-color: #007bff;
-    background-image: linear-gradient(135deg, #007bff, #3293fa);
 }
 
 .cbtn:hover, .cbtn:focus, .cbtn:active{
