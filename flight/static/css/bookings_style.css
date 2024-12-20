@@ -105,7 +105,7 @@ body{
     display: flex;
     justify-content: space-evenly;
 }
-.popup .btn{
+.popup .button{
     padding-left: 30px;
     padding-right: 30px;
 }
