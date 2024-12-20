@@ -13,7 +13,8 @@
 }
 
 h5{
-    color: #b8017b;
+    color: #0075ff;
+    font-weight: 600;
 }
 
 .ticket-details, .traveller-details, .seat-map, .price-details, .coupon-code{
@@ -96,7 +97,7 @@ h5{
     padding-top: 13px;
 }
 .add-traveller-btn{
-    padding: 1rem;
+    padding: .5rem 1rem .5rem 1rem ;
     font-size: .9em;
 }
 .add-traveller-btn:focus, .add-traveller-btn:active{
@@ -106,8 +107,8 @@ h5{
     font-weight: 600;
 }
 .delete-traveller button{
-    padding: 0;
-    background-color: red;
+    padding: 0 2px 0 2px;
+    background-color: red!important;
     border: none;
 }
 .delete-traveller button:focus, .delete-traveller button:active{
