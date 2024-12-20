@@ -51,7 +51,7 @@ Tokyo,Narita International Airport,NRT,Japan
 Moscow,Sheremetyevo International Airport,SVO,Russia
 Chongqing,Chongqing Jiangbei International Airport,CKG,China
 Bangkok,Don Mueang International Airport,DMK,Thailand
-Minneapolis,Minneapolis-St Paul International/Wold-Chamberlain Airport,MSP,United States
+Minneapolis,St Paul International Airport,MSP,United States
 Sao Paulo,São Paulo–Guarulhos International Airport,GRU,Brazil
 Boston,Logan International Airport,BOS,United States
 Ho Chi Minh City,Tan Son Nhat International Airport,SGN,Vietnam
@@ -77,7 +77,7 @@ Manchester,Manchester Airport,MAN,United Kingdom
 Oslo,"Oslo Airport, Gardermoen",OSL,Norway
 Lisbon,Lisbon Portela Airport,LIS,Portugal
 Stockholm,Stockholm Arlanda Airport,ARN,Sweden
-Baltimore,Baltimore/Washington International Thurgood Marshall Airport,BWI,United States
+Baltimore,Washington International Thurgood Marshall Airport,BWI,United States
 Antalya,Antalya Airport,AYT,Turkey
 London,London Stansted Airport,STN,United Kingdom
 Nanjing,Nanjing Lukou International Airport,NKG,China
@@ -99,30 +99,24 @@ Fukuoka,Fukuoka Airport,FUK,Japan
 Qingdao,Liuting Airport,TAO,China
 Brisbane,Brisbane International Airport,BNE,Australia
 Wuhan,Wuhan Tianhe International Airport,WUH,China
-Chennai,Chennai International Airport,MAA,India
-Kochi,Cochin International Airport,COK,India
-Hyderabad,Rajiv Gandhi International Airport,HYD,India
-Thiruvananthapuram,Trivandrum International Airport,TRV,India
-Kolkata,Netaji Subhash Chandra Bose International Airport,CCU,India
-Ahmedabad,Sardar Vallabhbhai Patel International Airport,AMD,India
-Calicut,Calicut International Airport,CCJ,India
-Jaipur,Jaipur International Airport,JAI,India
-Vasco da Gama,Dabolim Airport,GOI,India
-Lucknow,Chaudhary Charan Singh International Airport,LKO,India
-Coimbatore,Coimbatore International Airport,CJB,India
-Tiruchirappally,Tiruchirapally Civil Airport Airport,TRZ,India
-Pune,Pune Airport,PNQ,India
-Siliguri,Bagdogra Airport,IXB,India
-Guwahati,Lokpriya Gopinath Bordoloi International Airport,GAU,India
-Visakhapatnam,Vishakhapatnam Airport,VTZ,India
-Amritsar,Sri Guru Ram Dass Jee International Airport,ATQ,India
-Madurai,Madurai Airport,IXM,India
-Naqpur,Dr. Babasaheb Ambedkar International Airport,NAG,India
-Chandigarh,Chandigarh Airport,IXC,India
-Jammu,Jammu Airport,IXJ,India
-Srinagar,Sheikh ul Alam Airport,SXR,India
-Mangalore,Mangalore International Airport,IXE,India
-Port Blair,Vir Savarkar International Airport,IXZ,India
-Indore,Devi Ahilyabai Holkar Airport,IDR,India
-Agartala,Agartala Airport,IXA,India
-Patna,Lok Nayak Jayaprakash Airport,PAT,India
+Hanoi (Soc Son),Noi Bai International Airport,HAN,Vietnam
+Da Nang,Da Nang International Airport,DAD,Vietnam
+Buon Ma Thuot,Buon Ma Thuot Airport,BMV,Vietnam
+Vinh,Vinh Airport,VII,Vietnam
+Phu Quoc Island,Phu Quoc International Airport,PQC,Vietnam
+Cam Ranh,Cam Ranh International Airport / Cam Ranh Air Base,CXR,Vietnam
+Haiphong (Hai An),Cat Bi International Airport,HPH,Vietnam
+Da Lat,Lien Khuong Airport,DLI,Vietnam
+Huế,Phu Bai International Airport,HUI,Vietnam
+Quy Nohn,Phu Cat Airport,UIH,Vietnam
+Con Dao,Con Dao Airport,VCS,Vietnam
+Can Tho,Can Tho International Airport,VCA,Vietnam
+Dien Bien Phu,Dien Bien Phu Airport,DIN,Vietnam
+Ca Mau City,Cà Mau Airport,CAH,Vietnam
+Pleiku,Pleiku Airport,PXU,Vietnam
+Rach Gia,Rach Gia Airport,VKG,Vietnam
+Tuy Hoa,Dong Tac Airport,TBB,Vietnam
+Dong Hoi,Dong Hoi Airport,VDH,Vietnam
+Van Don,Van Don International Airport,VDO,Vietnam
+Tam Nghĩa,Chu Lai Airport,VCL,Vietnam
+Thanh Hóa,Tho Xuan Airport,THD,Vietnam
