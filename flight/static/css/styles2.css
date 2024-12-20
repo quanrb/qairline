@@ -5,6 +5,7 @@
 .button {
     color: #fff;
     background-color: #007bff;
+    background-image: linear-gradient(135deg, #007bff, #3293fa);
     border-color: #007bff;
     display: inline-block;
     font-weight: 400;
@@ -24,6 +25,7 @@
 }
 .button:hover{
     background-color: #3293fa;
+    background-image: linear-gradient(135deg, #3293fa, #007bff);
     color: #141414;
 }
 
