@@ -69,7 +69,7 @@
                         <input type="hidden" name="ReturnDate" value='{{return_date|date:"Y-m-d"}}'>
                         <input type="hidden" name="SeatClass" value="{{seat|lower}}">
                         <input type="hidden" name="TripType" id="trip-identifier" value="{{trip_type}}">
-                        <button class="button spl-btn" type="submit">Modify Search</button>
+                        <button class="button" type="submit">Modify Search</button>
                     </form>
                 </div>
             </div>
@@ -316,9 +316,9 @@
         {% endif %}
         <div class="query-result-div">
             <div class="container">
-                <div class="row">
+                <!-- <div class="row"> -->
                     {% if flights %}
-                        <div class="col-lg-3 filter-div">
+                        <div class="col-lg-12 filter-div">
                             <div class="close-filter" style="margin-top: 0;">
                                 <button class="button b1" onclick="close_filter(this)">
                                     <svg width="1.2em" height="1.2em" viewBox="0 0 16 16" class="bi bi-arrow-left" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -326,12 +326,14 @@
                                     </svg>
                                 </button>
                             </div>
+                           
                             <div class="filter">
                                 <center>
                                     <h4>Filter Results</h4>
                                 </center>
                                 <div class="filter-box">
-                                    <div class="filter-price">
+                                    <div class="row">
+                                    <div class="filter-price col-lg-4">
                                         <div class="font-weight-bold">Price</div>
                                         <div>
                                             <input type="range" class="form-control-range" min="{{min_price}}" max="{{max_price}}" value="{{max_price}}" oninput="filter()">
@@ -347,7 +349,7 @@
                                             </div>
                                         </div>
                                     </div><!---->
-                                    <div class="time-slot departure-time-slot-group">
+                                    <div class="time-slot departure-time-slot-group col-lg-4">
                                         <div class="font-weight-bold">Departure Time</div>
                                         <div style="display: flex; justify-content: space-between;">
                                             <div class="square-box" onclick="filter(this)" data-type="departure" data-start="0" data-end="6">
@@ -396,7 +398,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="time-slot arrival-time-slot-group">
+                                    <div class="time-slot arrival-time-slot-group col-lg-4">
                                         <div class="font-weight-bold">Arrival Time</div>
                                         <div style="display: flex; justify-content: space-between;">
                                             <div class="square-box" onclick="filter(this)" data-type="arrival" data-start="0" data-end="6">
@@ -446,6 +448,7 @@
                                         </div>
                                     </div>
                                 </div>
+                                </div>
                                 <div class="clr-filter-div">
                                     <center>
                                         <button class="btn-link">Reset Filters</button>
@@ -458,7 +461,7 @@
                                 </button>
                             </div>
                         </div>
-                        <div class="col-lg-9 actual-result-div">
+                        <div class="col-lg-12 actual-result-div">
                             <div class="sort-div" style="display:none">
                                 <div class="sort-label">Sort By:</div>
                                 <div style="display: flex;">

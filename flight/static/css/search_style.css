@@ -45,9 +45,9 @@
 }
 
 .button:hover{
-    background-color: #3293fa;
-    background-image: linear-gradient(135deg, #3293fa, #007bff);
-    color: #141414;
+    background-color: #0053b5;
+    background-image: linear-gradient(135deg, #0063d9, #0053b5);
+    color: #fff;
 }
 .v-line{
     border-left: 1px dashed rgba(255, 255, 255, .9);
@@ -62,13 +62,13 @@
 .query-data-div{
     min-height: 11vh;
     background-color: #8EC5FC;
-    background-image: linear-gradient(135deg, #ffffff, #eaeaea);
+    background-image: linear-gradient(90deg, #e6f1ff, #c2deff);
     padding: 1rem;
     display: flex;
 }
 .query-data-div2{
     background-color: #8EC5FC;
-    background-image: linear-gradient(135deg, #ffffff, #eaeaea);
+    background-image: linear-gradient(90deg, #e6f1ff, #c2deff);
     display: none;
 }
 .query-data-div2 > .container{
@@ -160,9 +160,9 @@
     background-image: linear-gradient(135deg, #007bff, #3293fa);
 }
 .trip-modify button:hover, button:active{
-    background-color: #3293fa;
-    background-image: linear-gradient(135deg, #3293fa, #007bff);
-    color: #141414;
+    background-color: #0053b5;
+    background-image: linear-gradient(135deg, #0063d9, #0053b5);
+    color: #fff;
 }
 .trip-modify button:focus{
     box-shadow: 0 0 0 0.2rem rgba(255,255,255,.3);
@@ -238,7 +238,7 @@
     background: none;
     border: none;
     outline: none;
-    color: blue;
+    color: #0075ff;
 }
 .btn-link:hover, .btn-link:focus, .btn-link:active{
     text-decoration: none;
