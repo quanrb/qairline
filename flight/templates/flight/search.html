@@ -597,13 +597,12 @@
                     {% endif %}
                 </div>
             </div>
-        </div>
-        {% if trip_type == '2' and flights %}
+            {% if trip_type == '2' and flights %}
             <div class="query-result-div-2" style="display: none;">
                 <div class="container">
-                    <div class="row">
+                    {% comment %} <div class="row"> {% endcomment %}
                         {% if flights2 %}
-                            <div class="col-lg-3 filter-div">
+                            <div class="col-lg-12 filter-div">
                                 <div class="close-filter" style="margin-top: 0;">
                                     <button class="button b1" onclick="close_filter(this)">
                                         <svg width="1.2em" height="1.2em" viewBox="0 0 16 16" class="bi bi-arrow-left" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -616,116 +615,118 @@
                                         <h4>Filter Results</h4>
                                     </center>
                                     <div class="filter-box">
-                                        <div class="filter-price2">
-                                            <div class="font-weight-bold">Price</div>
-                                            <div>
-                                                <input type="range" class="form-control-range" min="{{min_price2}}" max="{{max_price2}}" value="{{max_price2}}" oninput="filter2()">
-                                                <div class="price-range-output">
-                                                    <div class="initial-price-range">
-                                                        <span class="currency-symbol">₹</span>
-                                                        <span class="initial-price-value">{{min_price2}}</span>
+                                        <div class="row">
+                                            <div class="filter-price2 col-lg-4">
+                                                <div class="font-weight-bold">Price</div>
+                                                <div>
+                                                    <input type="range" class="form-control-range" min="{{min_price2}}" max="{{max_price2}}" value="{{max_price2}}" oninput="filter2()">
+                                                    <div class="price-range-output">
+                                                        <div class="initial-price-range">
+                                                            <span class="currency-symbol">₹</span>
+                                                            <span class="initial-price-value">{{min_price2}}</span>
+                                                        </div>
+                                                        <div class="final-price-range">
+                                                            <span class="currency-symbol">₹</span>
+                                                            <span class="final-price-value"></span>
+                                                        </div>
                                                     </div>
-                                                    <div class="final-price-range">
-                                                        <span class="currency-symbol">₹</span>
-                                                        <span class="final-price-value"></span>
+                                                </div>
+                                            </div><!---->
+                                            <div class="time-slot2 departure-time-slot-group2 col-lg-4">
+                                                <div class="font-weight-bold">Departure Time</div>
+                                                <div style="display: flex; justify-content: space-between;">
+                                                    <div class="square-box" onclick="filter2(this)" data-type="departure" data-start="0" data-end="6">
+                                                        <div class="filter-img-div">
+                                                            <div>
+                                                                <img src="{% static 'img/morning_inactive.png' %}" alt="" data-statefor="inactive">
+                                                                <img src="{% static 'img/morning_active.png' %}" alt="" data-statefor="active" style="display: none;">
+                                                            </div>
+                                                        </div>
+                                                        <div>
+                                                            Before 6 AM
+                                                        </div>
+                                                    </div>
+                                                    <div class="square-box" onclick="filter2(this)" data-type="departure" data-start="6" data-end="12">
+                                                        <div class="filter-img-div">
+                                                            <div>
+                                                                <img src="{% static 'img/noon_inactive.png' %}" alt="" data-statefor="inactive">
+                                                                <img src="{% static 'img/noon_active.png' %}" alt="" data-statefor="active" style="display: none;">
+                                                            </div>
+                                                        </div>
+                                                        <div>
+                                                            6 am - 12 pm
+                                                        </div>
+                                                    </div>
+                                                    <div class="square-box" onclick="filter2(this)" data-type="departure" data-start="12" data-end="18">
+                                                        <div class="filter-img-div">
+                                                            <div>
+                                                                <img src="{% static 'img/evening_inactive.png' %}" alt="" data-statefor="inactive">
+                                                                <img src="{% static 'img/evening_active.png' %}" alt="" data-statefor="active" style="display: none;">
+                                                            </div>
+                                                        </div>
+                                                        <div>
+                                                            12 pm - 6 pm
+                                                        </div>
+                                                    </div>
+                                                    <div class="square-box" onclick="filter2(this)" data-type="departure" data-start="18" data-end="24">
+                                                        <div class="filter-img-div">
+                                                            <div>
+                                                                <img src="{% static 'img/night_inactive.png' %}" alt="" data-statefor="inactive">
+                                                                <img src="{% static 'img/night_active.png' %}" alt="" data-statefor="active" style="display: none;">
+                                                            </div>
+                                                        </div>
+                                                        <div>
+                                                            After 6 pm
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div><!---->
-                                        <div class="time-slot2 departure-time-slot-group2">
-                                            <div class="font-weight-bold">Departure Time</div>
-                                            <div style="display: flex; justify-content: space-between;">
-                                                <div class="square-box" onclick="filter2(this)" data-type="departure" data-start="0" data-end="6">
-                                                    <div class="filter-img-div">
+                                            <div class="time-slot2 arrival-time-slot-group2 col-lg-4">
+                                                <div class="font-weight-bold">Arrival Time</div>
+                                                <div style="display: flex; justify-content: space-between;">
+                                                    <div class="square-box" onclick="filter2(this)" data-type="arrival" data-start="0" data-end="6">
+                                                        <div class="filter-img-div">
+                                                            <div>
+                                                                <img src="{% static 'img/morning_inactive.png' %}" alt="" data-statefor="inactive">
+                                                                <img src="{% static 'img/morning_active.png' %}" alt="" data-statefor="active" style="display: none;">
+                                                            </div>
+                                                        </div>
                                                         <div>
-                                                            <img src="{% static 'img/morning_inactive.png' %}" alt="" data-statefor="inactive">
-                                                            <img src="{% static 'img/morning_active.png' %}" alt="" data-statefor="active" style="display: none;">
+                                                            Before 6 AM
                                                         </div>
                                                     </div>
-                                                    <div>
-                                                        Before 6 AM
-                                                    </div>
-                                                </div>
-                                                <div class="square-box" onclick="filter2(this)" data-type="departure" data-start="6" data-end="12">
-                                                    <div class="filter-img-div">
+                                                    <div class="square-box" onclick="filter2(this)" data-type="arrival" data-start="6" data-end="12">
+                                                        <div class="filter-img-div">
+                                                            <div>
+                                                                <img src="{% static 'img/noon_inactive.png' %}" alt="" data-statefor="inactive">
+                                                                <img src="{% static 'img/noon_active.png' %}" alt="" data-statefor="active" style="display: none;">
+                                                            </div>
+                                                        </div>
                                                         <div>
-                                                            <img src="{% static 'img/noon_inactive.png' %}" alt="" data-statefor="inactive">
-                                                            <img src="{% static 'img/noon_active.png' %}" alt="" data-statefor="active" style="display: none;">
+                                                            6 am - 12 pm
                                                         </div>
                                                     </div>
-                                                    <div>
-                                                        6 am - 12 pm
-                                                    </div>
-                                                </div>
-                                                <div class="square-box" onclick="filter2(this)" data-type="departure" data-start="12" data-end="18">
-                                                    <div class="filter-img-div">
+                                                    <div class="square-box" onclick="filter2(this)" data-type="arrival" data-start="12" data-end="18">
+                                                        <div class="filter-img-div">
+                                                            <div>
+                                                                <img src="{% static 'img/evening_inactive.png' %}" alt="" data-statefor="inactive">
+                                                                <img src="{% static 'img/evening_active.png' %}" alt="" data-statefor="active" style="display: none;">
+                                                            </div>
+                                                        </div>
                                                         <div>
-                                                            <img src="{% static 'img/evening_inactive.png' %}" alt="" data-statefor="inactive">
-                                                            <img src="{% static 'img/evening_active.png' %}" alt="" data-statefor="active" style="display: none;">
+                                                            12 pm - 6 pm
                                                         </div>
                                                     </div>
-                                                    <div>
-                                                        12 pm - 6 pm
-                                                    </div>
-                                                </div>
-                                                <div class="square-box" onclick="filter2(this)" data-type="departure" data-start="18" data-end="24">
-                                                    <div class="filter-img-div">
-                                                        <div>
-                                                            <img src="{% static 'img/night_inactive.png' %}" alt="" data-statefor="inactive">
-                                                            <img src="{% static 'img/night_active.png' %}" alt="" data-statefor="active" style="display: none;">
+                                                    <div class="square-box" onclick="filter2(this)" data-type="arrival" data-start="18" data-end="24">
+                                                        <div class="filter-img-div">
+                                                            <div>
+                                                                <img src="{% static 'img/night_inactive.png' %}" alt="" data-statefor="inactive">
+                                                                <img src="{% static 'img/night_active.png' %}" alt="" data-statefor="active" style="display: none;">
+                                                            </div>
                                                         </div>
-                                                    </div>
-                                                    <div>
-                                                        After 6 pm
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="time-slot2 arrival-time-slot-group2">
-                                            <div class="font-weight-bold">Arrival Time</div>
-                                            <div style="display: flex; justify-content: space-between;">
-                                                <div class="square-box" onclick="filter2(this)" data-type="arrival" data-start="0" data-end="6">
-                                                    <div class="filter-img-div">
                                                         <div>
-                                                            <img src="{% static 'img/morning_inactive.png' %}" alt="" data-statefor="inactive">
-                                                            <img src="{% static 'img/morning_active.png' %}" alt="" data-statefor="active" style="display: none;">
+                                                            After 6 pm
                                                         </div>
-                                                    </div>
-                                                    <div>
-                                                        Before 6 AM
-                                                    </div>
-                                                </div>
-                                                <div class="square-box" onclick="filter2(this)" data-type="arrival" data-start="6" data-end="12">
-                                                    <div class="filter-img-div">
-                                                        <div>
-                                                            <img src="{% static 'img/noon_inactive.png' %}" alt="" data-statefor="inactive">
-                                                            <img src="{% static 'img/noon_active.png' %}" alt="" data-statefor="active" style="display: none;">
-                                                        </div>
-                                                    </div>
-                                                    <div>
-                                                        6 am - 12 pm
-                                                    </div>
-                                                </div>
-                                                <div class="square-box" onclick="filter2(this)" data-type="arrival" data-start="12" data-end="18">
-                                                    <div class="filter-img-div">
-                                                        <div>
-                                                            <img src="{% static 'img/evening_inactive.png' %}" alt="" data-statefor="inactive">
-                                                            <img src="{% static 'img/evening_active.png' %}" alt="" data-statefor="active" style="display: none;">
-                                                        </div>
-                                                    </div>
-                                                    <div>
-                                                        12 pm - 6 pm
-                                                    </div>
-                                                </div>
-                                                <div class="square-box" onclick="filter2(this)" data-type="arrival" data-start="18" data-end="24">
-                                                    <div class="filter-img-div">
-                                                        <div>
-                                                            <img src="{% static 'img/night_inactive.png' %}" alt="" data-statefor="inactive">
-                                                            <img src="{% static 'img/night_active.png' %}" alt="" data-statefor="active" style="display: none;">
-                                                        </div>
-                                                    </div>
-                                                    <div>
-                                                        After 6 pm
                                                     </div>
                                                 </div>
                                             </div>
@@ -743,7 +744,7 @@
                                     </button>
                                 </div>
                             </div>
-                            <div class="col-lg-9 actual-result-div">
+                            <div class="col-lg-12 actual-result-div">
                                 <div class="sort-div" style="display:none">
                                     <div class="sort-label">Sort By:</div>
                                     <div style="display: flex;">
@@ -882,8 +883,9 @@
                             </div>
                         {% endif %}
                     </div>
-                </div>
+                {% comment %} </div> {% endcomment %}
             </div>
         {% endif %}
+        </div>
     </section>
 {% endblock %}
